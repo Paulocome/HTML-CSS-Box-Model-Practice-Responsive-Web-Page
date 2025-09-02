@@ -1,0 +1,131 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px 0;
+    border-bottom: 4px solid #005fa3;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #005fa3;
+    border-radius: 5px;
+}
+
+/* Main Sections */
+section {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Service Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 250px;
+    background-color: #e0f0ff;
+    padding: 15px;
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Call-to-action */
+.call-to-action {
+    text-align: center;
+    padding: 25px;
+    background-color: #0077cc;
+    color: white;
+    border-radius: 8px;
+}
+
+.call-to-action button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #005fa3;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.call-to-action button:hover {
+    background-color: #003f7f;
+}
+
+/* Footer */
+footer {
+    background-color: #eaeaea;
+    border-top: 4px solid #ccc;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
